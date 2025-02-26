@@ -5,6 +5,10 @@ body {
   color: var(--font-default-color);
 }
 
+p {
+  line-height: 1.5;  /* 줄 간격을 1.5배로 설정 */
+}
+
 h1,
 h2,
 h3,
@@ -73,6 +77,8 @@ div.thumbnail {
   display: flex;
   justify-content: center;
   margin-bottom: var(--page-paragraph-margin-y);
+  width: 300px;
+  border-radius: 100px;
 }
 
 section::after {
@@ -189,4 +195,17 @@ footer p {
 
 .grid-container div:hover .alt-text {
   opacity: 1;
+}
+
+article {
+  display: flex;
+  flex-direction: row; /* 이미지가 좌측, 텍스트가 우측으로 배치되도록 설정 */
+  gap: 16px; /* 이미지와 텍스트 사이에 간격 추가 */
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1; /* 텍스트 영역이 남은 공간을 차지하도록 설정 */
 }
