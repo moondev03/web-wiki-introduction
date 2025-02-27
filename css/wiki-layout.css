@@ -75,7 +75,7 @@ article {
 
 div.thumbnail {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   margin-bottom: var(--page-paragraph-margin-y);
   width: 300px;
   border-radius: 100px;
@@ -199,15 +199,16 @@ footer p {
 
 article {
   display: flex;
-  flex-direction: row; /* 이미지가 좌측, 텍스트가 우측으로 배치되도록 설정 */
-  gap: 16px; /* 이미지와 텍스트 사이에 간격 추가 */
+  flex-direction: row; 
+  gap: 16px; 
 }
 
 .text-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-grow: 1; /* 텍스트 영역이 남은 공간을 차지하도록 설정 */
+  align-items: start;
+  flex-grow: 1;
 }
 
 /* 댓글 */
