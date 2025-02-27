@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const nickname = document.createElement("span");
             nickname.classList.add("comment-nickname");
-            nickname.textContent = getRandomNickname(); // 랜덤 닉네임 적용
+            nickname.textContent = getRandomNickname();
 
             const commentTextDiv = document.createElement("div");
             commentTextDiv.classList.add("comment-text");
