@@ -209,3 +209,110 @@ article {
   justify-content: center;
   flex-grow: 1; /* 텍스트 영역이 남은 공간을 차지하도록 설정 */
 }
+
+/* 댓글 */
+.comment-form {
+  width: 100%;
+}
+
+.comment-header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.comment-item {
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-height: 20px;
+  gap: 4px;
+}
+
+.profile-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 20%;
+}
+
+.comment-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.comment-text {
+  padding: 10px;
+  background-color: #FFFFFF;
+  min-height: 20px;
+  display: flex;
+  align-items: start;
+  width: 90%;
+}
+
+.comment-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96%;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin: 20px auto;
+}
+
+.comment-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.comment-input {
+  width: 560px;
+  height: 12px;
+  padding: 4px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
+.cancel-btn,
+.submit-btn {
+  width: 80px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.submit-btn {
+  background-color: #d8f5e0;
+  color: #007f5f;
+}
+
+.comment-list {
+  width: 96%;
+  margin: 10px auto;
+}
