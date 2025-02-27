@@ -160,9 +160,7 @@ footer p {
   --font-default-color: #333;
 }
 
-
 /* 나만의 갤러리 */
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -171,18 +169,25 @@ footer p {
 }
 .grid-container div {
   position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.grid-container div:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 .grid-container img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
 }
 .grid-container .alt-text {
   position: absolute;
   bottom: 4px;
   left: 50%;
-  transform: translateX(-50%); /* 수평으로 가운데 정렬 */
+  transform: translateX(-50%);
   width: 90%;
   background: rgba(0, 0, 0, 0.7);
   color: white;
@@ -192,15 +197,15 @@ footer p {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
-
 .grid-container div:hover .alt-text {
   opacity: 1;
 }
 
 article {
   display: flex;
-  flex-direction: row; 
-  gap: 16px; 
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
 }
 
 .text-content {
@@ -210,6 +215,7 @@ article {
   align-items: start;
   flex-grow: 1;
 }
+
 
 /* 댓글 */
 .comment-form {
